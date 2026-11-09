@@ -1,17 +1,22 @@
 .{
     .name = .mbedtls,
     .fingerprint = 0x841b00c247548313,
-    .version = "3.6.6",
-    .minimum_zig_version = "0.15.1",
+    .version = "4.2.0",
+    .minimum_zig_version = "0.17.1",
     .dependencies = .{
         .mbedtls = .{
-            .url = "git+https://github.com/Mbed-TLS/mbedtls.git?ref=v3.6.6#0bebf8b8c7f07abe3571ded48a11aa907a1ffb20",
-            .hash = "N-V-__8AAI1FmQLj92go7nR7_J6kwr-7uYyuitngGqydvWkd",
+            .url = "git+https://github.com/Mbed-TLS/mbedtls.git?ref=mbedtls-4.2.0#ba07f72f934a002021731a2bb5e564e5905f6569",
+            .hash = "N-V-__8AAC7KfgBq_FGZP6hLdx3PIQHgmldRzcOnnUTMICkP",
+        },
+        .tf_psa_crypto = .{
+            .url = "git+https://github.com/Mbed-TLS/TF-PSA-Crypto.git#4674a5360406776eacd23dc09cec9c386e769a52",
+            .hash = "N-V-__8AABhKbwFhJUT9OQy0Egr5u5TZ4g_dvRlH6_9I94QH",
         },
     },
     .paths = .{
         "LICENSE",
         "build.zig",
         "build.zig.zon",
+        "generated",
     },
 }
